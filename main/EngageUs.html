@@ -18,8 +18,8 @@
     <main role="main" class="container" style="color: rgba(245, 245, 245, 0.664);">
 
     <h4 style="text-align:center; padding:1ch">Request Automation Run</h4>
-    <div>
-      <form style="width: 40%; margin-left: 5%; border: 3px solid green">
+    <div >
+      <form style="width: 40%; margin-left: 5%; ">
         <div class="form-row">  
           <div class="col-lg-4">
               <label for="Project">Project Name:</label>
@@ -28,10 +28,10 @@
                 <input id="projectName">
             </div>
         </div>
-        
+        <br>
         <div class="form-row">  
             <div class="col-lg-4">
-                <label for="Project">Reason for Request:</label>
+                <label for="Project">Activity:</label>
               </div>
               <div class="col-lg-8" id="reasonContainer" >
                 <select class="form-control" id="reasonSelect" onchange="hideThing()">
@@ -41,7 +41,7 @@
                 </select>
               </div>
           </div>
-        
+        <br>
         <!--Hiddden Based on Selection-->
         <div id="stageSelection" hidden> <!-- Add Hidden Back Here!-->
           <!--Stage Select-->
@@ -57,7 +57,7 @@
               </select>
             </div>
           </div>
-          
+          <br>
           <!--This is for the check boxes of what to run-->
           <div id="suiteCombos" hidden>
             <div class="form-row" id="data">
@@ -74,6 +74,7 @@
                 <label class="form-check-label" for="frontOfficeCheck">Back Office</label>
               </div>
             </div>
+            <br>
             <div class="form-row">
               <div class="col-lg-4">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -88,6 +89,7 @@
                 <label class="form-check-label" for="tuneCheck">Tune</label>
               </div>
             </div>     
+            <br>
             <div class="form-row">
               <div class="col-lg-4">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -100,9 +102,10 @@
             </div>  
           </div>
         </div>
+        <br>
       </form>
     </div>
-    
+    <button style="margin: 9ch" type="submit">Request</button>
 </main><!-- /.container -->
 <script src="../js/myScript.js"></script>
 <script src="../js/navBar.js"></script>
@@ -112,3 +115,5 @@
 
 </body>
 </html>
+
+<!--Comment-->

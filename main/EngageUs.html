@@ -19,13 +19,13 @@
 
     <h4 style="text-align:center; padding:1ch">Request Automation Run</h4>
     <div >
-      <form id="engageForm" style="width: 40%; margin-left: 5%; ">
+      <form id="engageForm" action="abc.php" method="post" style="width: 40%; margin-left: 5%; ">
         <div class="form-row">  
           <div class="col-lg-4">
               <label for="Project">Project Name:</label>
             </div>
             <div class="col-lg-8">
-                <input id="projectName">
+                <input type="text" id="projectName" name="projectName">
             </div>
         </div>
         <br>
@@ -34,7 +34,7 @@
                 <label for="Project">Activity:</label>
               </div>
               <div class="col-lg-8" id="reasonContainer" >
-                <select class="form-control" id="reasonSelect" onchange="hideThing()">
+                <select class="form-control" id="reasonSelect" name="activity" onchange="hideThing()">
                   <option>Automation Development</option>
                   <option>Regression Run</option>
                   <option>Data Creation</option>
@@ -50,7 +50,7 @@
               <label for="reason">Environment</label>
             </div>
             <div class="col-lg-8">
-              <select class="form-control" id="envSelect">
+              <select class="form-control" id="envSelect" name="envselect">
                 <option>STG1</option>
                 <option>STG2</option>
                 <option>STG3</option>
@@ -74,7 +74,7 @@
                 <label class="form-check-label" for="frontOfficeCheck">Back Office</label>
               </div>
             </div>
-            <br>
+            <br >
             <div class="form-row">
               <div class="col-lg-4">
                 <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -103,7 +103,7 @@
           </div>
         </div>
         <br>
-        <button style="margin: 9ch" type="submit">Request</button>
+        <button style="margin: 9ch" type="submit" id="submit">Request</button>
       </form>
     </div>
     
